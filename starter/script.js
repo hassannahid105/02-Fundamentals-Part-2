@@ -140,3 +140,49 @@ console.log(tips);
 // BONUS: Create an array total containing the total values, so the bill + tip.
 const total = [bill[0] + tips[0], bill[1] + tips[1], bill[2] + tips[2]];
 console.log(total);
+
+//42.
+const nahid = {
+  firstName: "Nahid",
+  lastName: "Hassan",
+  age: 2043 - 2000,
+  job: "Student",
+  friends: ["Michael", "Peter", "Steven"],
+  hasdrivingLicense: true,
+  calcAge1: function (birthyear) {
+    return 2037 - birthyear;
+  },
+  str: function () {
+    if (this.hasdrivingLicense) {
+      return `${this.firstName} is a ${this.age}-years old teacher, and he has driver license`;
+    }
+  },
+};
+
+console.log(nahid.firstName);
+console.log(nahid["firstName"]);
+const nameKey = "Name";
+console.log(nahid[`first${nameKey}`]);
+console.log(nahid[`last${nameKey}`]);
+
+// const interestedIn = prompt(
+//   "what do you want to know about nahid? Choose between firstName, lastName, age, job, and friends"
+// );
+
+const interestedIn = "job";
+if (nahid[interestedIn]) {
+  console.log(nahid[interestedIn]);
+} else {
+  console.log("wrong request");
+}
+//
+const retriveEle = `${nahid.firstName} has ${nahid.friends.length} friends, and his best friends is called ${nahid.friends[0]}`;
+console.log(retriveEle);
+
+const myBirthyera = 2000;
+console.log(nahid.calcAge1(1990));
+console.log(nahid["calcAge1"](1990));
+console.log(nahid["calcAge1"](myBirthyera));
+
+const get = nahid.str();
+console.log(get);
