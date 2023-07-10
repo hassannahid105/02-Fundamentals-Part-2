@@ -220,3 +220,38 @@ if (mark.bmi > john.bmi) {
     `${john.fullName}'s BMI (${john.bmi}) is higher than ${mark.fullName}'s (${mark.bmi})!`
   );
 }
+
+//
+
+// const p = }
+const arr = ["nahid", "hassan", "23", "student", "coading", "2000", "goal"];
+for (let i = arr.length - 1; i >= 0; i--) {
+  console.log(arr[i]);
+}
+
+for (let i = 1; i < 4; i++) {
+  console.log(`---------------stating exercise ${i}`);
+  for (let rep = 1; rep < 6; rep++) {
+    console.log(`lifting weight rep ${rep}`);
+  }
+}
+
+// Create an array called bills containing all 10 test bill values.
+
+// Create empty arrays for the tips and the totals (tips and totals)
+
+// Use the calcTip function we wrote before (included in the starter code) to calculate tips and total values (bill + tip) for every bill value in the bills array. Use a for loop to perform the 10 calculations!
+
+// const calcAverage1 = function(arr)
+// const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+// const tips1 = [];
+const totals = [];
+const calcTip1 = function (bill) {
+  for (let i = 0; i < bill.length; i++) {
+    console.log(bill);
+  }
+  return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+};
+
+calcTip1(50);
+calcTip1(400);
